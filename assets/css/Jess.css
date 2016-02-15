@@ -504,7 +504,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     display: block;
     width:100%;
     top:-70px;
-    font-size: 48px;
+    font-size: 44px;
     text-align: center;
 }
 
@@ -853,6 +853,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #references h1{
     position:relative;
+}
+
+#references p{
+    font-size: 20px;
 }
 
 #references .references-icon {
@@ -1216,15 +1220,15 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ----- Media Queries ----
 ------------------------*/
 
-@media (max-width:1300px){
+@media (max-width:1400px){
 	.percent{
-		font-size: 44px;
+		font-size: 40px;
 	}
 }
 
 @media (max-width:1200px){
 	.percent{
-		font-size: 40px;
+		font-size: 36px;
 	}
 }
 
@@ -1313,7 +1317,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	
     .percent{
         top:-60px;
-        font-size: 34px;
+        font-size: 30px;
     }
     
     #projects-container .project-item{
