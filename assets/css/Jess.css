@@ -872,7 +872,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-size:30px;
 }
 
-.flexslider{
+#references .flexslider{
     border:none;
     box-shadow:none;
     background:transparent;
@@ -880,19 +880,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     padding:0;
 }
 
-.flexslider .flex-direction-nav {
+#references .flexslider .flex-direction-nav {
     display:block;
     position:absolute;
     bottom:10px;
     right:0;
 }
 
-.flexslider .flex-direction-nav li{
+#references .flexslider .flex-direction-nav li{
     display:inline;
 }
 
-.flexslider .flex-direction-nav .flex-prev,
-.flexslider .flex-direction-nav .flex-next{
+#references .flexslider .flex-direction-nav .flex-prev,
+#references .flexslider .flex-direction-nav .flex-next{
     background:transparent;
     background-image:none;
     display:inline;
@@ -913,13 +913,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     transition:opacity .2s ease-out;
 }
 
-.flexslider .flex-direction-nav a:hover{
+#references .flexslider .flex-direction-nav a:hover{
     opacity:1;
 }
 
-.flexslider .flex-direction-nav a:hover,
-.flexslider .flex-direction-nav a:active,
-.flexslider .flex-direction-nav a:focus{
+#references .flexslider .flex-direction-nav a:hover,
+#references .flexslider .flex-direction-nav a:active,
+#references .flexslider .flex-direction-nav a:focus{
     text-decoration:none;
 }
 

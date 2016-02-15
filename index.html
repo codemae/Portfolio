@@ -226,6 +226,24 @@
 				
 				<h1 class="big-text text-center scrollimation fade-in">Portfolio</h1>
 				
+				<!--==== Portfolio Filters ====-->
+				<div id="filter-works">
+					<ul>
+						<li class="active scrollimation fade-right d1">
+							<a href="#" data-filter="*">All</a>
+						</li>
+						<li class="scrollimation fade-right">
+							<a href="#" data-filter=".web">Web</a>
+						</li>
+						<li class="scrollimation fade-left">
+							<a href="#" data-filter=".data">Data</a>
+						</li>
+						<li class="scrollimation fade-left d1">
+							<a href="#" data-filter=".research">Research</a>
+						</li>
+					</ul>
+				</div><!--End portfolio filters -->
+				
 				<!--==== Project Preview ====-->
 				<div id="project-preview">
 				
@@ -250,16 +268,19 @@
 					=============================================== -->	
 					<article class="project-item illustration">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb.png"  alt=""><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb-stellar-clusters.png"  alt=""><!--Project thumb -->
 						
 						<div class="hover-mask">
-							<h2 class="project-title">Designer World</h2><!--Project Title -->
-							<p>illustration</p><!--Project Subtitle -->
+							<h2 class="project-title">Identifying Clusters</h2><!--Project Title -->
+							<p>C++, Complex Algorithms, Mathematics, Research</p><!--Project Subtitle -->
 						</div>
 						
 						<!--==== Project Preview HTML ====-->
 						
-						<div class="sr-only project-description" data-images="assets/images/slide.png,assets/images/slide.png" >
+						<div class="sr-only project-description" data-images="assets/images/slide-stellar-clusters.png,
+																			  assets/images/slide-stellar-clusters-full.png,
+																			  assets/images/slide-stellar-clusters-full-menu.png,
+																			  assets/images/slide-stellar-clusters-full-menu2.png" >
 						
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
 							
@@ -468,7 +489,7 @@
                         <i class="fa fa-quote-left"></i>&nbsp;&nbsp;<i class="fa fa-quote-right"></i>
                     </div>
                     <div class="col-sm-11">
-                        <div class="flexslider">
+                        <div class="ref-slider flexslider">
                             <ul class="slides">
                                 <li>
                                 <a class="references" href="https://uk.linkedin.com/in/liz-lyon-74333046" target="_blank">
@@ -576,11 +597,11 @@
 		<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
 		
 		<script src="assets/js/libs/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/jquery.scrollto.js"></script>
 		<script src="assets/js/waypoints.min.js"></script>
 		<script src="assets/js/jquery.masonry.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/flexslider/2.2/jquery.flexslider-min.js"></script>
-		<script src="https://cdn.jsdelivr.net/jquery.backstretch/2.0.4/jquery.backstretch.min.js"></script>
+		<script src="assets/js/jquery.backstretch.min.js"></script>
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/scripts.js"></script>
 		
