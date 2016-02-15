@@ -25,6 +25,7 @@
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/flexslider.css">
 		<link rel="stylesheet" href="assets/css/Jess.css">
+		<link rel="stylesheet" href="assets/css/hover-min.css">
 		
 		<!-- ==============================================
 		Fonts
@@ -61,7 +62,7 @@
 					</button>
 					
 					<!-- ======= LOGO ========-->
-					<a class="navbar-brand scrollto" href="#home"> CODE <span>MAE</span></a>
+					<a class="navbar-brand scrollto hvr-pulse" href="#home"><i class="fa fa-home"></i> CODE <span>MAE</span></a>
 				
 				</div>
 				
@@ -71,16 +72,19 @@
 							<a href="#home" class="scrollto">HOME</a>
 						</li>
 						<li>
-							<a href="#about" class="scrollto">ABOUT</a>
+							<a href="#about" class="scrollto"><i class="fa fa-female"></i> ABOUT</a>
 						</li>
 						<li>
-							<a href="#portfolio" class="scrollto">PORTFOLIO</a>
+							<a href="#skills" class="scrollto"><i class="fa fa-book"></i> SKILLS</a>
 						</li>
 						<li>
-							<a href="#references" class="scrollto">REFERENCES</a>
+							<a href="#portfolio" class="scrollto"><i class="fa fa-code-fork"></i> WORK</a>
 						</li>
 						<li>
-							<a href="#contact" class="scrollto">CONTACT</a>
+							<a href="#references" class="scrollto"><i class="fa fa-quote-left"></i><i class="fa fa-quote-right"></i> REFERENCES</a>
+						</li>
+						<li>
+							<a href="#contact" class="scrollto"><i class="fa fa-comments-o"></i> CONTACT</a>
 						</li>
 					</ul>
 				</div><!--End navbar-collapse -->
@@ -107,7 +111,7 @@
 		<!-- ==============================================
 		ABOUT
 		=============================================== -->
-		<section id="about" class="add-padding bg-color2 border-top-color1 border-bottom-color1">
+		<section id="about" class="add-padding bg-color2">
 		
 			<div class="container">
 				
@@ -122,7 +126,7 @@
 					<div class="col-sm-6 scrollimation fade-left d3">
 					
 						<h1 class="big-text">Hi, I'm Jess.</h1>
-                        
+                     
                         <p class="lead">WHO I AM</p>
 						<p>
 							I'm a UK based junior full-stack developer, passionate about code, architecture, technology, science and mathematics. 
@@ -162,7 +166,7 @@
 		<!-- ==============================================
 		SKILLS
 		=============================================== -->
-		<section id="skills" class="add-padding border-bottom-color2">
+		<section id="skills" class="add-padding">
 		
 			<div class="container">
 				
@@ -216,7 +220,7 @@
 		<!-- ==============================================
 		PORTFOLIO
 		=============================================== -->
-		<section id="portfolio" class="add-padding border-bottom-color2">
+		<section id="portfolio" class="add-padding">
 		
 			<div class="container">
 				
@@ -456,20 +460,31 @@
 		<!-- ==============================================
 		REFERENCES
 		=============================================== -->
-		<section id="references" class="add-padding bg-color1 border-bottom-color2">
+		<section id="references" class="add-padding bg-color1">
 		
 			<div class="container">
-				<div class="row scrollimation fade-in">
-					<a class="references" href="https://uk.linkedin.com/in/liz-lyon-74333046" target="_blank">
-						<div class="col-sm-1 references-icon">
-							<i class="fa fa-quote-left"></i>&nbsp;&nbsp;<i class="fa fa-quote-right"></i>
-						</div>
-						<div class="col-sm-11">
-							<h1>Hardworking, organised and intelligent. Always one of the top in the class.</h1>
-							<p>Liz Lyon<br />Software Engineer in Test, SkyBet</p>
-						</div>
-					</a>
-				</div>
+                <div class="row scrollimation fade-in">
+                    <div class="col-sm-1 references-icon">
+                        <i class="fa fa-quote-left"></i>&nbsp;&nbsp;<i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                <a class="references" href="https://uk.linkedin.com/in/liz-lyon-74333046" target="_blank">
+                                    <h1>Hardworking, organised and intelligent. Always one of the top in the class.</h1>
+                                    <p>Liz Lyon<br />Fellow Student at the University of Central Lancashire<br />Software Engineer in Test, SkyBet</p>
+                                </a>
+                                </li><li>
+                                <a class="references" href="https://uk.linkedin.com/in/liz-lyon-74333046" target="_blank">
+                                    <h1>A hard-working, thoughtful invididual with a keen intellect and the ability to go far.</h1>
+                                    <p>Alexander Flynn<br />Fellow Student at the University of Central Lancashire<br />RSPCA</p>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		
 		</section>
@@ -486,7 +501,6 @@
 					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
 					
 						<h1 class="big-text">Contact Me</h1>
-						
 						<p class="lead">If you have something to share, this is the right place for you!</p>
 					
 						<p>I love to connect with new people. Would you like to chat or recommend an article? Have any questions? Or perhaps you're having technical difficulties with my site? Whatever the reason, don't hesitate - get in touch!</p>
@@ -557,31 +571,13 @@
 		<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
 		
 		<script src="assets/js/libs/bootstrap.min.js"></script>
-		<script src="assets/js/jquery.scrollto.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 		<script src="assets/js/waypoints.min.js"></script>
 		<script src="assets/js/jquery.masonry.min.js"></script>
-		<script src="assets/js/jquery.flexslider.min.js"></script>
-		<script src="assets/js/jquery.backstretch.min.js"></script>
-		<script src="assets/js/twitterFetcher_v10_min.js"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="https://cdn.jsdelivr.net/flexslider/2.2/jquery.flexslider-min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.backstretch/2.0.4/jquery.backstretch.min.js"></script>
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/scripts.js"></script>
-		
-		<script>
-		
-			var mapPoint = {
-					'lat': 40.720099,
-					'lng': -74.005764,
-					'zoom' : 15,
-					'infoText':'<p>250 W Broadway\
-								<br/>New York\
-								<br/>NY 10013</p>',
-					'linkText':'View on Google Maps',
-					'mapAddress':'250 W Broadway, New York, NY 10013',
-					'icon': 'assets/images/pin-dark.png'
-				};
-			
-		</script>
 		
 	</body>
 	

@@ -17,7 +17,7 @@ a{
 
 a:hover,a:focus{
 	color:#F28C83;
-	text-decoration:underline
+	text-decoration:underline;
 }
 
 a:focus,
@@ -206,7 +206,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     display: inline-block;
     font-size:24px;
     font-weight:700;
-	color:  #334959;
+	color:#334959;
     text-transform: uppercase;
 }
 
@@ -271,12 +271,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     padding:0px 10px;
     font-size:18px;
     line-height:54px;
-    font-weight:400;
     background:transparent;
     color:#334959;
     transition: color .2s ease-in;
 }
 
+#main-nav .nav a:active,
 #main-nav .nav a:hover{
     color: #509B9E;
 }
@@ -296,6 +296,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-nav.scrolled .nav li.active a,
 #main-nav.scrolled .nav a:hover{
     color: #509B9E;
+}
+
+#main-nav.scrolled .nav li.active a{
+	color:#334959;
+	background-color: #509B9E;
+	font-weight: bold;
 }
 
 /*-----------------------
@@ -417,6 +423,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 --- About Styles ----
 -------------------------*/
 
+#about{
+    background-image:url('../images/bg-about.png');
+    background-repeat:no-repeat;
+    background-position: 100% 100%;
+}
+
 .polaroid {
     border:12px solid #fff;
     max-width: 85%;
@@ -439,6 +451,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 -------------------------*/
 
 #skills{
+	background-image:url('../images/bg-skills.png');
+    background-repeat:no-repeat;
+    background-position:0 0;
     background-color: #fff;
 }
 
@@ -853,7 +868,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-size:30px;
 }
 
-#references-slider{
+.flexslider{
     border:none;
     box-shadow:none;
     background:transparent;
@@ -861,19 +876,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     padding:0;
 }
 
-#references-slider .flex-direction-nav {
+.flexslider .flex-direction-nav {
     display:block;
     position:absolute;
     bottom:10px;
     right:0;
 }
 
-#references-slider .flex-direction-nav li{
+.flexslider .flex-direction-nav li{
     display:inline;
 }
 
-#references .flex-direction-nav .flex-prev,
-#references .flex-direction-nav .flex-next{
+.flexslider .flex-direction-nav .flex-prev,
+.flexslider .flex-direction-nav .flex-next{
     background:transparent;
     background-image:none;
     display:inline;
@@ -894,159 +909,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     transition:opacity .2s ease-out;
 }
 
-#references-slider .flex-direction-nav a:hover{
+.flexslider .flex-direction-nav a:hover{
     opacity:1;
 }
 
-#references-slider .flex-direction-nav a:hover,
-#references-slider .flex-direction-nav a:active,
-#references-slider .flex-direction-nav a:focus{
-    text-decoration:none;
-}
-
-/*----------------------
------Twitter Styles-----
-------------------------*/
-
-#twitter {
-    color:#fff;
-    background-image:url('../images/bg-twitter.png');
-    background-repeat:no-repeat;
-    background-position:-30px -20px;
-}
-
-#twitter a:hover,
-#twitter a:active,
-#twitter a:focus{
-    text-decoration:none;
-}
-
-#twitter a {
-    color: #334959;
-    text-decoration: none;
-    transition: color .2s ease-out;
-}
-
-.references a{
-	color: #fff;
-	text-decoration: none;
-}
-
-#twitter a:hover,
-#twitter a:focus {
-    color: #fff;
-}
-
-#twitter h1{
-    position:relative;
-}
-
-#twitter .tweet{
-    font-size:24px;
-    line-height:36px;
-    font-weight:300;
-    word-spacing:5px;
-    margin-bottom:40px;
-    overflow:hidden;
-    word-wrap:break-word;
-}
-
-#twitter .timePosted{
-    display:inline-block;
-    font-size:16px;
-    font-weight:300;
-    margin-bottom:20px;
-}
-
-#twitter .interact{
-    margin-left:20px;
-    padding-right:80px;
-    display:inline-block;
-    font-size:21px;
-    font-weight:300;
-}
-
-#twitter .interact a {
-    margin-right:6px;
-}
-
-#twitter .interact a:hover {
-    color:#fff;
-    transition: color .2s ease-out;
-}
-
-#twitter .twitter-icon {
-    padding-top:6px;
-    text-align:center;
-}
-
-#twitter .fa-twitter {
-    font-size:60px;
-}
-
-#twitter .fa-quote-left {
-    font-size:30px;
-}
-
-#twitter .fa-quote-right {
-    font-size:30px;
-}
-
-#twitter-slider{
-    border:none;
-    box-shadow:none;
-    background:transparent;
-    margin:0;
-    padding:0;
-}
-
-#twitter-slider .flex-direction-nav {
-    display:block;
-    position:absolute;
-    bottom:10px;
-    right:0;
-}
-
-#twitter-slider .flex-direction-nav li{
-    display:inline;
-}
-
-#twitter .flex-direction-nav .flex-prev,
-#twitter .flex-direction-nav .flex-next{
-    background:transparent;
-    background-image:none;
-    display:inline;
-    opacity:0.6;
-    text-indent:0;
-    position:relative;
-    left:0;
-    top:0;
-    width:auto;
-    height:42px;
-    padding:0;
-    margin:0;
-    margin-left:7px;
-    font-size:42px;
-    line-height:42px;
-    color:#fff;
-    -webkit-transition:opacity .2s ease-out;
-    transition:opacity .2s ease-out;
-}
-
-#twitter-slider .flex-direction-nav a:hover{
-    opacity:1;
-}
-
-#twitter-slider .flex-direction-nav a:hover,
-#twitter-slider .flex-direction-nav a:active,
-#twitter-slider .flex-direction-nav a:focus{
+.flexslider .flex-direction-nav a:hover,
+.flexslider .flex-direction-nav a:active,
+.flexslider .flex-direction-nav a:focus{
     text-decoration:none;
 }
 
 /*----------------------
 ----- Contact Styles ----
 ------------------------*/
-
 #contact{
     background-image:url('../images/bg-contact.png');
     background-repeat:no-repeat;
@@ -1151,36 +1026,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-size: 21px;
     line-height: 21px;
     margin-right: 5px;
-}
-
-/*-------------------
----- GMap Styles ----
----------------------*/
-
-#gmap{
-	display: block;
-	width: 100%;
-	height: 500px;
-	margin: 0 auto;
-}
-
-#gmap .infowin{
-    padding:10px 20px;
-}
-
-#gmap .infowin p{
-    margin-bottom:10px;
-    font-family:Raleway, Arial, sans-serif;
-    font-size:16px;
-    line-height:24px;
-}
-
-#gmap .infowin a{
-    color:#F28C83;
-}
-
-#gmap .infowin a:hover{
-    text-decoration:underline;
 }
 
 /*----------------------
@@ -1371,28 +1216,104 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ----- Media Queries ----
 ------------------------*/
 
-@media (max-width:991px){
-    
-    .big-text{
+@media (max-width:1300px){
+	.percent{
+		font-size: 44px;
+	}
+}
+
+@media (max-width:1200px){
+	.percent{
+		font-size: 40px;
+	}
+}
+
+@media (max-width:991px){  	
+	.big-text{
         font-size:48px;
         line-height:52px;
         letter-spacing:0.01em;
         word-spacing: 0.15em;
     }
+	
+	#main-nav{
+		background: #fff;
+	}
+	
+	#main-nav .navbar-toggle{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        color: #334959;
+		background:#fff !important;
+        border-color:#334959 !important;
+    }
 
-    #main-nav .nav a,
+    #main-nav .navbar-toggle .icon-bar{
+        width: 28px;
+        height: 4px;
+        margin-top: 0;
+        background:#334959 !important;
+    }
+
+    #main-nav .navbar-toggle .icon-bar + .icon-bar{
+        margin-top: 4px;
+    }
+	
+	#main-nav .container,
+    #main-nav.scrolled .container{
+        padding:5px 20px;
+    }
+	
+	#main-nav .nav a,
     #main-nav .nav a:active,
     #main-nav .nav a:hover{
         font-size:16px;
     }
-
-    #main-nav li{
-        margin:0 5px;
+	
+	#main-nav .nav li.active a,
+    #main-nav .nav a:hover{
+        color: #509B9E;
+    }
+	
+	#main-nav .navbar-brand{
+        padding-top: 10px;
+        font-size: 21px;
+        color:#334959;
+    }
+    
+    #main-nav .navbar-brand img{
+        margin-right: 10px;
+        max-width: 40px;
     }
 
+    #home .container{
+        margin-top:-80px;
+    }
+	
+	#home p{
+		font-size: 28px;
+	}
+
+	#home h1{
+		font-size:52px;
+	}
+	
+	#home h1 + p{
+		font-size: 28px;
+	}
+
+	#about{
+		background-size:70%;
+		background-position: 100% 100%;
+	}
+	
+	#skills{
+		background-size:40%;
+	}
+	
     .percent{
         top:-60px;
-        font-size: 42px;
+        font-size: 34px;
     }
     
     #projects-container .project-item{
@@ -1434,66 +1355,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         margin-top:-20px;
         margin-bottom: 40px;
     }
-    
-    #main-nav{
-        background:#fff;
-        box-shadow: 0 0 3px rgba(0,0,0,0.2);
-    }
-
-    #main-nav .navbar-toggle{
-        margin-bottom: 5px;
-        margin-top: 5px;
-        color: #334959;
-		background:#fff !important;
-        border-color:#334959 !important;
-    }
-
-    #main-nav .navbar-toggle .icon-bar{
-        width: 28px;
-        height: 4px;
-        margin-top: 0;
-        background:#334959 !important;
-    }
-
-    #main-nav .navbar-toggle .icon-bar + .icon-bar{
-        margin-top: 4px;
-    }
-    
-    #main-nav .container,
-    #main-nav.scrolled .container{
-        padding:5px 20px;
-    }
-
-    #main-nav .nav a,
-    #main-nav .nav a:active,
-    #main-nav .nav a:hover{
-        line-height: 42px;
-        text-align: center;
-        color: #334959;
-    }
-
-	#main-nav .nav li.active a,
-    #main-nav .nav a:hover{
-        color: #509B9E;
-    }
-
-    #main-nav .navbar-brand{
-        padding-top: 5px;
-        font-size: 21px;
-        color:#334959;
-    }
-    
-    #main-nav .navbar-brand img{
-        margin-right: 10px;
-        max-width: 40px;
-    }
-
-    #home .container{
-        margin-top:-80px;
-    }
 
     #home p{
-        font-size: 24px;
+        font-size: 26px;
     }
 
     #home h1{
@@ -1501,12 +1365,20 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     }
 
     #home h1 + p{
-        font-size: 21px;
+        font-size: 26px;
     }
     
     .service-item{
         margin-bottom: 40px;
     }
+	
+	#about{
+		background-image:url('../images/bg-about.png');
+		background-size:70%;
+		background-repeat:no-repeat;
+		background-position: 100% 100%;
+	}
+
     
     .polaroid {
         border:12px solid #fff;
@@ -1523,6 +1395,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         font-size: 28px;
     }
     
+	#skills{
+		background-size:30%;
+	}
+	
     .skills-item p{
         font-size: 14px;
     }
@@ -1537,23 +1413,25 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     #project-title{
         font-size: 28px;
     }
-    
-    #twitter .tweet{
-        font-size:18px;
-        line-height:24px;
-    }
-    
+   
     #contact-form{
         margin-top: 30px;
-    }
-    
-    #gmap{
-        height: 300px;
     }
 }
 
 @media (max-width:479px){
     
+	#about{
+		background-image:url('../images/bg-about.png');
+		background-size:60%
+		background-repeat:no-repeat;
+		background-position: 100% 100%;
+	}
+	
+	#skills{
+		background-image:none;
+	}
+	
     #projects-container .project-item{
         width:300px;
         margin-bottom: 15px;
